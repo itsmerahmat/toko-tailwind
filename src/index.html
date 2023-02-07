@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./build.css" />
+    <title>Toko Tailwind</title>
+  </head>
+
+  <body>
+    <!-- Top Nav Start  -->
+    <div class="bg-primary1 w-full p-2">
+      <div class="container mx-auto flex justify-center md:justify-between">
+        <p class="text-white hidden md:flex">
+          <img src="assets/images/call.svg" class="mr-2" alt="call" /> 0834 213
+          8123
+        </p>
+        <p class="text-white">Dapatkan Promo Beli 1 Gratis 1</p>
+        <p class="text-white hidden md:flex">
+          <img src="assets/images/location.svg" class="mr-2" alt="location" />
+          Semarang, Indonesia
+        </p>
+      </div>
+    </div>
+    <!-- Top Nav End  -->
+
+    <!-- Navbar Start  -->
+    <nav class="bg-white px-2 sm:px-4 py-2.5 w-full border-b border-gray-200">
+      <div
+        class="container flex flex-wrap items-center justify-between mx-auto"
+      >
+        <a href="https://flowbite.com/" class="flex items-center">
+          <img src="assets/logo.svg" class="h-6 mr-3 sm:h-9" alt="Toko Logo" />
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            class="text-primary1 border-2 border-primary1 focus:ring-4 focus:outline-none focus:ring-green-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-1"
+          >
+            Login
+          </button>
+          <button
+            type="button"
+            class="text-white bg-primary1 hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-green-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+          >
+            Register
+          </button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href="#"
+                class="font-bold block py-2 pl-3 pr-4 text-white bg-primary1 rounded md:bg-transparent md:text-primary1 md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-bold text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary1 md:p-0 md:w-auto"
+              >
+                Kategori
+                <svg
+                  class="w-5 h-5 ml-1"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >T-Shirt</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >Sepatu</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                      >Jeans</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary1 md:p-0"
+                >Promo</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar End  -->
+
+    <!-- Hero Start  -->
+    <div class="bg-primary2 h-1/2 w-full p-2">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center"
+      >
+        <!-- Grid 1 -->
+        <div class="flex justify-center mt-4 md:order-2 md:mt-0">
+          <img
+            src="assets/images/hero.png"
+            class="h-64 md:h-96 mb-4 md:-mb-2"
+            alt="hero"
+          />
+        </div>
+        <!-- Grid 2 -->
+        <div class="ml-5 md:ml-0">
+          <p class="font-light text-xl md:text-2xl">
+            Diskon <span class="font-semibold">30%</span> Hari ini
+          </p>
+          <p class="font-black text-3xl md:text-6xl text-primary1">
+            Promo 2023 <br />
+            Jacket Collection
+          </p>
+          <button
+            type="button"
+            class="mt-5 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-5"
+          >
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Hero End  -->
+
+    <!-- Kategori Start  -->
+    <div class="container mt-6 mx-auto grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div
+        class="relative bg-primary2 p-5 rounded-md flex justify-between mx-5 md:mx-0"
+      >
+        <div>
+          <p class="font-light text-xl text-white">Diskon 10 %</p>
+          <p class="font-black text-3xl text-white">T-Shirt</p>
+          <button
+            type="button"
+            class="mt-5 text-primary2 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-4 py-2 mr-2"
+          >
+            Beli Sekarang
+          </button>
+        </div>
+        <div class="absolute bottom-0 right-0">
+          <img src="assets/images/kategori1.png" alt="baju" />
+        </div>
+      </div>
+      <div
+        class="relative bg-primary3 p-5 rounded-md flex justify-between mx-5 md:mx-0"
+      >
+        <div>
+          <p class="font-light text-xl text-black">Diskon 10 %</p>
+          <p class="font-black text-3xl text-black">Sepatu</p>
+          <button
+            type="button"
+            class="mt-5 text-white bg-black border border-black focus:outline-none hover:bg-slate-900 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-4 py-2 mr-2"
+          >
+            Beli Sekarang
+          </button>
+        </div>
+        <div class="absolute bottom-0 right-0">
+          <img src="assets/images/kategori2.png" alt="baju" />
+        </div>
+      </div>
+      <div
+        class="relative bg-primary1 p-5 rounded-md flex justify-between mx-5 md:mx-0"
+      >
+        <div>
+          <p class="font-light text-xl text-white">Diskon 10 %</p>
+          <p class="font-black text-3xl text-white">Jeans</p>
+          <button
+            type="button"
+            class="mt-5 text-primary1 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-4 py-2 mr-2"
+          >
+            Beli Sekarang
+          </button>
+        </div>
+        <div class="absolute bottom-0 right-0">
+          <img src="assets/images/kategori3.png" alt="jeans" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Kategori End  -->
+
+    <!-- Top Product Start  -->
+    <div class="mt-8 container mx-auto">
+      <h1 class="font-black text-2xl">Top Product</h1>
+      <div
+        class="mt-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mx-5 md:mx-0"
+      >
+        <!-- Grid 1 -->
+        <div class="border border-boderColor p-4 rounded-2xl">
+          <!-- Gambar  -->
+          <div class="bg-bgColor p-4 flex justify-center rounded-2xl">
+            <img src="assets/images/product1.png" class="h-48" alt="p1" />
+          </div>
+          <!-- Title  -->
+          <div class="mt-3">
+            <p class="font-light text-boderColor text-base">Jeans</p>
+            <p class="font-light text-2xl">JEANS WANITA 39</p>
+          </div>
+
+          <!-- Harga & Review -->
+          <div class="mt-3 mb-5">
+            <p class="font-black">Rp. 125.000</p>
+            <div class="mt-1 flex">
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star-half.svg" alt="star" />
+              <img src="assets/images/star-hide.svg" alt="star" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid 2 -->
+        <div class="border border-boderColor p-4 rounded-2xl">
+          <!-- Gambar  -->
+          <div class="bg-bgColor p-4 flex justify-center rounded-2xl">
+            <img src="assets/images/product2.png" class="h-48" alt="p1" />
+          </div>
+          <!-- Title  -->
+          <div class="mt-3">
+            <p class="font-light text-boderColor text-base">T-Shirt</p>
+            <p class="font-light text-2xl">T-SHIRT BLACK</p>
+          </div>
+
+          <!-- Harga & Review -->
+          <div class="mt-3 mb-5">
+            <p class="font-black">Rp. 120.000</p>
+            <div class="mt-1 flex">
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star-hide.svg" alt="star" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid 3 -->
+        <div class="border border-boderColor p-4 rounded-2xl">
+          <!-- Gambar  -->
+          <div class="bg-bgColor p-4 flex justify-center rounded-2xl">
+            <img src="assets/images/product3.png" class="h-48" alt="p1" />
+          </div>
+          <!-- Title  -->
+          <div class="mt-3">
+            <p class="font-light text-boderColor text-base">Sepatu</p>
+            <p class="font-light text-2xl">SEPATU HITAM</p>
+          </div>
+
+          <!-- Harga & Review -->
+          <div class="mt-3 mb-5">
+            <p class="font-black">Rp. 500.000</p>
+            <div class="mt-1 flex">
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star-half.svg" alt="star" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid 4 -->
+        <div class="border border-boderColor p-4 rounded-2xl">
+          <!-- Gambar  -->
+          <div class="bg-bgColor p-4 flex justify-center rounded-2xl">
+            <img src="assets/images/product1.png" class="h-48" alt="p1" />
+          </div>
+          <!-- Title  -->
+          <div class="mt-3">
+            <p class="font-light text-boderColor text-base">Jeans</p>
+            <p class="font-light text-2xl">JEANS WANITA 39</p>
+          </div>
+
+          <!-- Harga & Review -->
+          <div class="mt-3 mb-5">
+            <p class="font-black">Rp. 125.000</p>
+            <div class="mt-1 flex">
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star.svg" alt="star" />
+              <img src="assets/images/star-half.svg" alt="star" />
+              <img src="assets/images/star-hide.svg" alt="star" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Product End  -->
+
+    <!-- Subscribe Start  -->
+    <div class="bg-primary3 w-full mt-8 p-12 flex flex-col items-center">
+      <p class="font-black text-2xl">Let's Keep In Touch</p>
+      <p class="font-light text-center mt-2">
+        Segera isi untuk dapatkan diskon 15 % untuk Pemesanan Pertama
+      </p>
+
+      <div class="mt-4 flex rounded-md shadow-sm">
+        <input
+          type="text"
+          name="company-website"
+          id="company-website"
+          class="py-2 px-5 block w-full md:w-72 flex-1 rounded-none rounded-l-md focus:border-indigo-500 focus:ring-indigo-500 text-md"
+          placeholder="Enter Your Email..."
+        />
+        <button
+          class="py-2 px-3 inline-flex items-center rounded-r-md bg-black text-white text-base"
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
+    <!-- Subscribe End  -->
+
+    <!-- FAQ Start  -->
+    <div class="container mx-auto p-12">
+      <p class="font-black text-2xl text-center mb-8">
+        Frequently Asked Questions (FAQ)
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <!-- 1 -->
+        <div
+          id="accordion-collapse"
+          data-accordion="collapse"
+          class="rounded-lg"
+        >
+          <h2 id="accordion-collapse-heading-1">
+            <button
+              type="button"
+              class="rounded-lg flex items-center justify-between w-full p-5 font-light text-left text-black border border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100"
+              data-accordion-target="#accordion-collapse-body-1"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-1"
+            >
+              <span>Bagaimana Caranya Memesan ?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-1"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-1"
+          >
+            <div
+              class="p-5 font-light border border-t-0 border-gray-200 rounded-b-lg -mt-2"
+            >
+              <p class="mb-2 text-gray-500">
+                The main difference is that the core components from Flowbite
+                are open source under the MIT license, whereas Tailwind UI is a
+                paid product. Another difference is that Flowbite relies on
+                smaller and standalone components, whereas Tailwind UI offers
+                sections of pages.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div
+          id="accordion-collapse"
+          data-accordion="collapse"
+          class="rounded-lg"
+        >
+          <h2 id="accordion-collapse-heading-2">
+            <button
+              type="button"
+              class="rounded-lg flex items-center justify-between w-full p-5 font-light text-left text-black border border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100"
+              data-accordion-target="#accordion-collapse-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-2"
+            >
+              <span>Bagaimana Caranya Pengembalian Barang?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-2"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-2"
+          >
+            <div
+              class="p-5 font-light border border-t-0 border-gray-200 rounded-b-lg -mt-2"
+            >
+              <p class="mb-2 text-gray-500">
+                The main difference is that the core components from Flowbite
+                are open source under the MIT license, whereas Tailwind UI is a
+                paid product. Another difference is that Flowbite relies on
+                smaller and standalone components, whereas Tailwind UI offers
+                sections of pages.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div
+          id="accordion-collapse"
+          data-accordion="collapse"
+          class="rounded-lg"
+        >
+          <h2 id="accordion-collapse-heading-3">
+            <button
+              type="button"
+              class="rounded-lg flex items-center justify-between w-full p-5 font-light text-left text-black border border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100"
+              data-accordion-target="#accordion-collapse-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-3"
+            >
+              <span>Berapa Ongkirnya ?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-3"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-3"
+          >
+            <div
+              class="p-5 font-light border border-t-0 border-gray-200 rounded-b-lg -mt-2"
+            >
+              <p class="mb-2 text-gray-500">
+                The main difference is that the core components from Flowbite
+                are open source under the MIT license, whereas Tailwind UI is a
+                paid product. Another difference is that Flowbite relies on
+                smaller and standalone components, whereas Tailwind UI offers
+                sections of pages.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div
+          id="accordion-collapse"
+          data-accordion="collapse"
+          class="rounded-lg"
+        >
+          <h2 id="accordion-collapse-heading-4">
+            <button
+              type="button"
+              class="rounded-lg flex items-center justify-between w-full p-5 font-light text-left text-black border border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100"
+              data-accordion-target="#accordion-collapse-body-4"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-4"
+            >
+              <span>Bagamana Cara Menggunakan Diskon ?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-4"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-4"
+          >
+            <div
+              class="p-5 font-light border border-t-0 border-gray-200 rounded-b-lg -mt-2"
+            >
+              <p class="mb-2 text-gray-500">
+                The main difference is that the core components from Flowbite
+                are open source under the MIT license, whereas Tailwind UI is a
+                paid product. Another difference is that Flowbite relies on
+                smaller and standalone components, whereas Tailwind UI offers
+                sections of pages.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ End  -->
+
+    <!-- Footer Start  -->
+    <div class="bg-primary1 w-full mt-8 p-12 flex flex-col items-center">
+      <img src="assets/logo-white.svg" alt="" />
+      <p class="font-light text-center text-white mt-3">
+        Jalan Sumpah Pemuda No. 18 <br />
+        Krapyak Semarang (Gedua A Lantai 2)
+      </p>
+      <div class="mt-5 flex">
+        <img src="assets/images/ig.svg" alt="ig" />
+        <img src="assets/images/fb.svg" class="mx-3" alt="fb" />
+        <img src="assets/images/tiktok.svg" alt="tt" />
+      </div>
+    </div>
+    <!-- Footer End  -->
+
+    <!-- Copyright Start  -->
+    <div class="bg-bgGreen p-4">
+      <p class="text-white text-center font-light">
+        © Wahidev Academy 2023. Hak Cipta Dilindungi
+      </p>
+    </div>
+    <!-- Copyright End  -->
+
+    <!-- Flowbite Js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+  </body>
+</html>
